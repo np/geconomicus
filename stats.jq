@@ -36,7 +36,7 @@ def stats:
     , values:  $values
     , total:   ($coins + $values)
     , before:  { rounds: $before, stats: ($before | onrounds) }
-    , after:   { rounds: $after,  stats: ($after | onrounds) }
+    , after:   { rounds: $after,  stats: ($after  | onrounds) }
     , stats:   $stats
     }
 ;
