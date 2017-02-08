@@ -52,5 +52,10 @@ def scores_by_age:
   ] | map(show) | join("\t"))
 ;
 
-(.byname | scores_by_name), "\n\n",
-(.byage[] | scores_by_age, "\n\n")
+(.byname | scores_by_name)
+, ""
+, "Total valeurs: " + (.byname | map(.values) | add | tostring)
+, "Total monnaie: " + (.byname | map(.coins)  | add | tostring)
+, "Total points:  " + (.byname | map(.total)  | add | tostring)
+# , "",
+# (.byage[] | scores_by_age, "\n\n")
