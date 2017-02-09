@@ -39,23 +39,41 @@ def scores_by_name:
 
 def scores_by_age:
 (
-[ "AGE"
+[ "SCORE"
+, "AGE"
+, "T.MONNA"
+, "T.VALEU"
 , "M.MONNA"
 , "M.VALEU"
 , "M.TOTAL"
+# , "TAILLE"
 ] | join("\t")),
-(debug |.[] |
-  [ .age
+( map(.total = (.dtotals | add))
+  | sort_by(.total) | reverse | .[] |
+  [ .total
+  , .age
+  , (.dcoins  | add)
+  , (.dvalues | add)
   , .acoins
   , .avalues
   , .atotals
+# , .size
   ] | map(show) | join("\t"))
 ;
 
-(.byname | scores_by_name)
+  "Résultats de l'équipe"
+, "====================="
 , ""
-, "Total valeurs: " + (.byname | map(.values) | add | tostring)
-, "Total monnaie: " + (.byname | map(.coins)  | add | tostring)
-, "Total points:  " + (.byname | map(.total)  | add | tostring)
-# , "",
-# (.byage[] | scores_by_age, "\n\n")
+, "Total valeurs : " + (.byname | map(.values) | add | tostring)
+, "Total monnaie : " + (.byname | map(.coins)  | add | tostring)
+, "Total points :  " + (.byname | map(.total)  | add | tostring)
+, ""
+, "Résultats individuels"
+, "====================="
+, ""
+, (.byname | scores_by_name)
+, ""
+, "Résultats par tranche d'age"
+, "==========================="
+, ""
+, (.byage | scores_by_age)
