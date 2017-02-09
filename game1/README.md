@@ -87,19 +87,19 @@ Résultats par tranche d'age
 Légende
 =======
 
-Points :     La somme des valeurs et de la monnaie.
-SCORE :      Nombre de points en fin de 1ère vie et en fin de partie.
-AGE DEPART : Age au départ de la partie.
-CHANCE :     Monnaie de départ (1-3 pieces).
-M1.MONNAIE : Moyenne de monnaie gagnée a chaque manche de cinq minutes pendant la 1ère vie.
-M1.VALEURS : Moyenne de valeur  gagnée a chaque manche de cinq minutes pendant la 1ère vie.
-M1.TOTAL :   Moyenne de points  gagnée a chaque manche de cinq minutes pendant la 1ère vie.
-M2.MONNAIE : Moyenne de monnaie gagnée a chaque manche de cinq minutes pendant la 2ème vie.
-M2.VALEURS : Moyenne de valeur  gagnée a chaque manche de cinq minutes pendant la 2ème vie.
-M2.TOTAL :   Moyenne de points  gagnée a chaque manche de cinq minutes pendant la 2ème vie.
-M.MONNAIE :  Moyenne de monnaie gagnée a chaque manche de cinq minutes en global.
-M.VALEU :    Moyenne de valeur  gagnée a chaque manche de cinq minutes en global.
-M.TOTAL :    Moyenne de points  gagnée a chaque manche de cinq minutes en global.
-T.MONNAIE :  Total de monnaie.
-T.VALEU :    Total de valeurs.
-N/A     :    Non disponible (qu'une seule vie pour le joueur)
+    Points :     La somme des valeurs et de la monnaie.
+    SCORE :      Nombre de points en fin de 1ère vie et en fin de partie.
+    AGE DEPART : Age au départ de la partie.
+    CHANCE :     Monnaie de départ (1-3 pieces).
+    M1.MONNAIE : Moyenne de monnaie gagnée a chaque manche de cinq minutes pendant la 1ère vie.
+    M1.VALEURS : Moyenne de valeur  gagnée a chaque manche de cinq minutes pendant la 1ère vie.
+    M1.TOTAL :   Moyenne de points  gagnée a chaque manche de cinq minutes pendant la 1ère vie.
+    M2.MONNAIE : Moyenne de monnaie gagnée a chaque manche de cinq minutes pendant la 2ème vie.
+    M2.VALEURS : Moyenne de valeur  gagnée a chaque manche de cinq minutes pendant la 2ème vie.
+    M2.TOTAL :   Moyenne de points  gagnée a chaque manche de cinq minutes pendant la 2ème vie.
+    M.MONNAIE :  Moyenne de monnaie gagnée a chaque manche de cinq minutes en global.
+    M.VALEU :    Moyenne de valeur  gagnée a chaque manche de cinq minutes en global.
+    M.TOTAL :    Moyenne de points  gagnée a chaque manche de cinq minutes en global.
+    T.MONNAIE :  Total de monnaie.
+    T.VALEU :    Total de valeurs.
+    N/A     :    Non disponible (qu'une seule vie pour le joueur)
